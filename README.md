@@ -1,75 +1,57 @@
-# React + TypeScript + Vite
+💰 Expense Tracker
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern and responsive Expense Tracker built with React, TypeScript, Vite, and Tailwind CSS.
 
-Currently, two official plugins are available:
+The application allows users to manage income and expenses, filter transactions, search transactions, edit and delete records, and persist data using browser localStorage.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+✨ Features
 
-## React Compiler
+➕ Add income and expense transactions
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+✏️ Edit existing transactions
 
-## Expanding the ESLint configuration
+🗑️ Delete transactions with confirmation
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+🔎 Search transactions by title
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+🔖 Filter by transaction type
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+All
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+Income
 
-```
+Expense
 
-You can also install [eslint-plugin-react-x](https://npmx.dev/package/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://npmx.dev/package/eslint-plugin-react-dom) for React-specific lint rules:
+📂 Filter by category
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+💰 Automatic financial summary
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+Total Income
 
-```
+Total Expenses
+
+Balance
+
+💾 Persistent data using localStorage
+
+📱 Responsive design
+
+🎨 Modern UI built with Tailwind CSS
+
+⚡ Fast development with Vite
+
+🔷 Fully typed with TypeScript
+
+🛠️ Tech Stack
+
+React
+
+TypeScript
+
+Vite
+
+Tailwind CSS
+
+React Hooks
+
+LocalStorage API
